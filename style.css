@@ -1,0 +1,64 @@
+.headerdiv{
+	font-size:170%;
+    font-family: 'Dancing Script';
+}
+
+.headerdiv h1{
+    color: #d3adf7;
+    margin-bottom: 0px;
+}
+
+.headerdiv h2{
+	font-size:50%;
+	text-decoration:underline;
+    margin-top: 10px;
+}
+
+a {
+    color: #d3adf7;
+}
+
+.styled-text{
+    color: #ffffff;
+    font-size:60%;
+    font-style: italic;
+}
+
+body{
+    background-color: black;
+    color: white;
+    text-align:center;
+    margin-left:auto; 
+    margin-right:auto; 
+    max-width:30cm;
+    width:90%;
+    margin-bottom:2em;
+}
+
+.timeline a{
+    font-style: italic;
+}
+
+img{
+    width: 300px; 
+    height: 300px; 
+}
+
+.stats table{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 2px solid white;
+    width: 50%;
+    background-color: #d3adf7;
+    color:black;
+}
+
+.stats table th, td{
+    border: 1px solid white; 
+}
+
+.stylechange{
+    margin-top: 15px;
+}
