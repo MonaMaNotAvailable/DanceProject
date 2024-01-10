@@ -1,64 +1,148 @@
-.headerdiv{
-	font-size:170%;
+.headerdiv {
+    font-size: 2em;
     font-family: 'Dancing Script';
 }
 
-.headerdiv h1{
+.headerdiv h1 {
     color: #d3adf7;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
-.headerdiv h2{
-	font-size:50%;
-	text-decoration:underline;
-    margin-top: 10px;
+.headerdiv h2 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-top: 0.5em;
+}
+
+h3{
+    font-size: 1.7em;
+}
+
+p{
+    font-size: 1.3em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 a {
     color: #d3adf7;
 }
 
-.styled-text{
+.styled-text {
     color: #ffffff;
-    font-size:60%;
+    font-size: 1em;
     font-style: italic;
 }
 
-body{
+body {
     background-color: black;
     color: white;
-    text-align:center;
-    margin-left:auto; 
-    margin-right:auto; 
-    max-width:30cm;
-    width:90%;
-    margin-bottom:2em;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 30cm;
+    width: 90%;
+    margin-bottom: 2em;
 }
 
-.timeline a{
+.timeline a {
     font-style: italic;
 }
 
-img{
-    width: 300px; 
-    height: 300px; 
+img {
+    max-width: 60%;
+    height: auto;
 }
 
-.stats table{
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+.content {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+hr {
+    padding: 0;
+    border: none;
+    height: 20px; /* Height of the HR to accommodate the heart image */
+    background: linear-gradient(to right, 
+                rgba(211, 173, 247, 0), 
+                rgba(211, 173, 247, 0.75), 
+                rgba(211, 173, 247, 0)) no-repeat center/100% 3px; /* Gradient line with 80% width and 2px height */
+    text-align: center;
+    margin-top: 2em;
+    position: relative; 
+}
+
+hr::after {
+    content: ""; 
+    display: block;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 20px; /* Width of the heart image */
+    height: 20px; /* Height of the heart image */
+    background: url('img/heart.png') no-repeat center; 
+    background-size: contain; /* Make sure the image fits within the dimensions */
+}
+
+.stats table {
+    margin: 10px auto;
     border-collapse: collapse;
     border: 2px solid white;
-    width: 50%;
+    width: 60%;
     background-color: #d3adf7;
-    color:black;
+    color: black;
 }
 
-.stats table th, td{
-    border: 1px solid white; 
+.stats th, .stats td {
+    border: 1px solid white;
+    padding: 5px;
 }
 
-.stylechange{
+@media screen and (max-width: 600px) {
+    .headerdiv {
+        font-size: 1.5em;
+    }
+
+    .headerdiv h2 {
+        font-size: 1em;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .stats table, .stats th, .stats td {
+        font-size: 0.9em;
+        width: 90%;
+    }
+
+    .stats th:nth-child(1), .stats td:nth-child(1) { /* Song column */
+        width: 18%;
+    }
+    .stats th:nth-child(2), .stats td:nth-child(2) { /* Filmed column */
+        width: 32%;
+    }
+    .stats th:nth-child(3), .stats td:nth-child(3) { /* Published column */
+        width: 32%;
+    }
+    .stats th:nth-child(4), .stats td:nth-child(4) { /* Views column */
+        width: 18%;
+    }
+}
+
+.stylechange {
     margin-top: 15px;
+}
+
+.endnote {
+    font-size: 1.5em;
+    font-family: 'Dancing Script';
 }
